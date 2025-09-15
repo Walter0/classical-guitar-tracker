@@ -38,7 +38,7 @@ A beautiful, earth-toned Streamlit application for tracking your classical guita
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/classical-guitar-tracker.git
+   git clone https://github.com/Walter0/classical-guitar-tracker.git
    cd classical-guitar-tracker
    ```
 
@@ -53,6 +53,26 @@ A beautiful, earth-toned Streamlit application for tracking your classical guita
    ```
 
 4. **Open your browser** to `http://localhost:8501`
+
+### 🖱️ Easy Launchers (Alternative)
+
+For a more convenient experience, use the provided launcher files:
+
+#### **macOS**
+- **Double-click** `Guitar Tracker Launcher.command` to start the app
+- Or run: `python3 launch.py`
+- Create a Desktop shortcut by making an alias of the `.command` file
+
+#### **Windows**  
+- **Double-click** `Guitar Tracker Launcher.bat` to start the app
+- Or run: `python launch.py`
+
+#### **Cross-Platform Python Launcher**
+- Run: `python3 launch.py` (or `python launch.py` on Windows)
+- Automatically finds a free port and opens your browser
+- Shows helpful status messages
+
+*Note: The launchers automatically check for dependencies and install Streamlit if needed.*
 
 ## 🎯 How to Use
 
@@ -112,12 +132,15 @@ All your data is stored locally in a SQLite database (`guitar_tracker.db`):
 ### File Structure
 ```
 classical-guitar-tracker/
-├── app.py                 # Main application file
-├── requirements.txt       # Python dependencies
-├── README.md             # This file
-├── guitar_icon.svg       # Application icon
-├── .gitignore           # Git ignore rules
-└── guitar_tracker.db    # SQLite database (created on first run)
+├── app.py                           # Main Streamlit application
+├── launch.py                        # Cross-platform Python launcher
+├── Guitar Tracker Launcher.command  # macOS launcher (double-click)
+├── Guitar Tracker Launcher.bat      # Windows launcher (double-click)
+├── requirements.txt                 # Python dependencies
+├── README.md                       # Documentation
+├── guitar_icon.png                 # Application icon
+├── .gitignore                      # Git ignore rules
+└── guitar_tracker.db               # SQLite database (created in home directory)
 ```
 
 ## 🤝 Contributing
