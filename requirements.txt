@@ -1,1 +1,5 @@
-streamlit>=1.49.0
+streamlit
+PyQt5
+PyQtWebEngine
+requests
+Pillow

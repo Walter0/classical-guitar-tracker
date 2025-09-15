@@ -56,6 +56,12 @@ Thumbs.db
 # Streamlit
 .streamlit/
 
+# Build artifacts
+build/
+dist/
+*.spec
+icon_files/
+
 # Temporary files
 launch_guitar_tracker.sh
 Guitar_Tracker.scpt

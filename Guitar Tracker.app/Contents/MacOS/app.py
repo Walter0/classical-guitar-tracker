@@ -3,8 +3,8 @@ import sqlite3
 import datetime
 from pathlib import Path
 
-# Database setup - Use user's home directory for database
-DB_PATH = Path.home() / "guitar_tracker.db"
+# Database setup
+DB_PATH = Path("guitar_tracker.db")
 
 def migrate_database():
     """Migrate database schema if needed"""
